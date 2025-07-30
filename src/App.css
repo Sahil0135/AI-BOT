@@ -1,0 +1,130 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  scrollbar-width: none;
+}
+textarea{
+  height: 4.5rem;
+  width: 26rem;
+
+  font-size: 20px;
+  border: 2px solid grey;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 2px;
+  margin-right: 1rem;
+  padding: 0.4rem;
+}
+button{
+  height: 40px;
+  width: 90px;
+  background-color: red;
+  color: azure;
+  border: none;
+  border-radius: 12px;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap:2rem
+  
+}
+
+/* Gemini-style gradient text */
+.gemini-text {
+  background: linear-gradient(90deg, #00f5a0, #00d9f5, #ff00cc, #ffcc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  --b: 8px; 
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(#0000 10%,#f03355) content-box;
+  -webkit-mask:
+    repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+    radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+  -webkit-mask-composite: destination-in;
+          mask-composite: intersect;
+  animation:l4 1s infinite steps(10);
+}
+@keyframes l4 {to{transform: rotate(1turn)}}
+/* @keyframes glow {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.4); }
+  100% { filter: brightness(1); }
+} */
+
+.gemini-background {
+background-color: #2C2C2C;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: none;
+  transition: 0.3s ease;
+  background-color: grey;   /* black input */
+  color: aliceblue;              /* green text */
+}
+
+input::placeholder {
+  color: white; /* Light gray */
+}

@@ -1,0 +1,42 @@
+/* Container for user (ans) */
+.response-answer {
+
+
+ 
+  max-width: auto;
+  display: inline-flex;
+
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
+   align-items: center;
+  justify-content: center; 
+  font-weight: bold;
+  margin-bottom: 12px;
+
+  background: linear-gradient(90deg, #3a3a3a, #1f1f1f);
+  color: #00ffcc; /* glowing cyan */
+  border-radius: 10px;
+  padding: 0.5rem;
+  /* border: 2px solid #00ffcc; */
+}
+
+/* Container for bot (recive) */
+.response-bot {
+
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* height: 50px; */
+  height: auto; 
+  
+  width: auto; */
+  font-size: 1.1rem;
+  border: 1px solid #00d9f5;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+}
